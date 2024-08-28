@@ -1,0 +1,16 @@
+# Given data
+actual_values <- c(34.65, 34.32, 31.59, 38.59, 34.87)
+alpha <- 0.25  # Exponential smoothing parameter
+forecast_period_6 <- alpha * actual_values[length(actual_values)] + (1 - alpha) * actual_values[length(actual_values) - 1]
+
+# Compute absolute percentage error for each period
+APE <- abs((forecast_period_6 - actual_values[length(actual_values)]) / actual_values[length(actual_values)]) * 100
+
+# Compute MAPE
+MAPE <- mean(APE)
+
+# Round MAPE to the nearest percent
+MAPE_rounded <- round(MAPE)
+
+# Print the rounded MAPE
+cat("The MAPE of the forecast, rounded to the nearest percent, is:", MAPE_rounded, "%\n")

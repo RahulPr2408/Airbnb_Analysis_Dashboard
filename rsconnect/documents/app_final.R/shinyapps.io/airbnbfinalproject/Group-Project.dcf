@@ -1,0 +1,13 @@
+name: Group-Project
+title: Group-Project
+username: airbnbfinalproject
+account: airbnbfinalproject
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12240235
+bundleId: 8792935
+url: https://airbnbfinalproject.shinyapps.io/Group-Project/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Assignment 4 - Signature Individual Essay.pdf|Austin.csv|background_img.webp|Istanbul.csv|Melbourne.csv|Paris.csv|RScript.R|Toronto.csv
